@@ -261,8 +261,23 @@ img{
         }
       }
       .widget_bottom{
+        table{
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          tbody{
+            tr:nth-child(odd){
+              background: #f9f9f9;
+            }
+          }
+        }
         .Active{
           background: #468847;
+        }
+        .inactive{
+          background:#999;
+        }
+        .Banned{
+          background:#b94a48;
         }
       }
     }
