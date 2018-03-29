@@ -1,0 +1,127 @@
+body,div,p,ul,ol,li,dl,dt,dd,table,tr,td,form,fieldset,h1,h2,h3,h4,h5,h6,img,input{
+  margin:0;
+  padding:0;
+}
+html,body{
+  height: 100%;
+}
+body{
+  font-family: "微软雅黑",Arial;
+  display: flex;
+  flex-direction: column;
+}
+a{
+  text-decoration:none;
+}
+ul,ol{
+  list-style:none;
+}
+img{
+  border: 0;
+}
+.claerfix:after{
+  display: block;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+  height: 0;
+}
+
+//头部
+.header{
+  width: 100%;
+  height: 48px;
+  background: #292a2f;
+}
+//主体内容
+.content{
+  width: 100%;
+  display: flex;
+  flex: 1;
+  .sidebar{
+    width: 220px;
+    background: #292a2f;
+  }
+  .container{
+    flex: 1;
+    padding: 30px 28px;
+    .section01{
+      display: flex;
+      justify-content: center;
+      margin-bottom: 40px;
+      padding-top: 14px;
+      .section01_con{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .div_chart{
+          margin-right: 32px;
+          background: #91cc84;
+          .chart{
+            width: 120px;
+            height: 120px;
+
+          }
+
+        }
+      }
+      .section01_right{
+        margin-right: -32px;
+      }
+    }
+    .section02{
+      display: flex;
+      width: 100%;
+      height: 375px;
+      justify-content: space-between;
+      background: #f6f6f6;
+      .section02_left{
+        width: 30%;
+        height: 100%;
+        border: 1px solid #e6e6e6;
+        .sec02_l_tit{
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid #e6e6e6;
+          background: #e6e6e6;
+          .tit_l{
+            span{
+              float: left;
+              height: 53px;
+              line-height: 53px;
+              width: 43px;
+              i{
+                display: inline-block;
+                width: 21px;
+                height: 17px;
+                margin-left: 12px;
+                background:  url(../img/ws_bg.jpg);
+              }
+            }
+            h5{
+              padding-top: 15px;
+              float: left;
+            }
+          }
+          .tit_r{
+            width: 17px;
+            height:15px ;
+          }
+        }
+        .sec02_l_list{
+           ul{
+             li{
+               padding: 10px 5px;
+               height: 42px;
+             }
+           }
+        }
+      }
+      .section02_right{
+        width: 68%;
+        height: 100%;
+        border: 1px solid #e6e6e6;
+      }
+    }
+  }
+}
