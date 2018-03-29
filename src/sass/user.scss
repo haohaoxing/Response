@@ -1,0 +1,285 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 14px;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+img{
+  vertical-align: bottom;
+  border: 0;
+}
+.clear:after{
+  height: 0;
+  content: "";
+  display: block;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+
+.head{
+  width: 100%;
+  height: 48px;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+//主体部分
+.section{
+  width: 100%;
+  height: 500px;
+  //侧边栏
+  .c{
+    width: 220px;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 48px;
+    left: 0;
+  }
+
+  //主体内容
+  .content{
+    padding: 0 25px 25px;
+    margin: 48px 0 0 220px;
+    background: #f8f8f8;
+    // 位置导航
+    .con_nav{
+      margin-bottom: 25px;
+      ul{
+        padding: 8px 0;
+        li{
+          float: left;
+          line-height: 30px;
+          a{
+            color: #26aef2;
+          }
+          .last{
+            color: #999;
+          }
+          span{
+            padding: 0 5px;
+            color: #ccc;
+          }
+        }
+      }
+      .heading{
+        border-bottom: 1px solid #EBEBEB;
+        padding: 0 0 15px;
+        h2{
+          float: left;
+          font-size: 31.5px;
+          color: inherit;
+        }
+        .btn-group{
+          float: right;
+          .btn{
+            float: left;
+            padding: 4px 12px;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            vertical-align: middle;
+            cursor: pointer;
+            color: #333;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+            background-color: #f5f5f5;
+            border: 1px solid #bbbbbb;
+            &:first-child{
+              border-top-left-radius: 4px;
+              border-bottom-left-radius: 4px;
+              border-right: 0;
+            }
+            &:last-child{
+              border-top-right-radius: 4px;
+              border-bottom-right-radius: 4px;
+              border-left: 0;
+            }
+          }
+        }
+      }
+    }
+    // 第一个板块
+    .row-fluid{
+      margin-bottom: 25px;
+      .widget{
+        border: 1px solid #e0e0e0;
+        .widget_head{
+          background: #efefef;
+          border-radius: 3px 3px 0 0;
+          height: 51px;
+          border-bottom: 1px solid #DDDDDD;
+          >i{
+            font-size: 16px;
+            padding: 15px 10px 15px 11px;
+            text-align: center;
+            float: left;
+            color: #62687e;
+            font-weight: 200;
+          }
+          p{
+            line-height: 51px;
+            color: #62687e;
+            float: left;
+          }
+          .buttons{
+            float: right;
+            padding: 15px 15px 0 0;
+            a{
+              color: #777777;
+              cursor: pointer;
+              font-size: 16px;
+              margin: 0 0 0 8px;
+              text-decoration: none;
+            }
+          }
+        }
+        .widget_body{
+          padding: 15px;
+          min-height: 290px;
+          background: #fff;
+          table{
+            width: 100%;
+            background-color: transparent;
+            border-collapse: collapse;
+            border-spacing: 0;
+            tr{
+              width: 100%;
+              th{
+                vertical-align: bottom;
+                padding: 8px 8px 15px 8px;
+                line-height: 20px;
+                text-align: left;
+                vertical-align: top;
+              }
+              td{
+                vertical-align: bottom;
+                padding: 8px 8px 15px 8px;
+                line-height: 20px;
+                text-align: left;
+                vertical-align: top;
+                border-top: 1px solid #dddddd;
+                >span{
+                  color: #fff;
+                  font-size: 12px;
+                  font-weight: 600;
+                  padding: 2px;
+                }
+                .working{
+                  background: #468847;
+                }
+                .onLeave{
+                  background: #999;
+                }
+                .btn-group{
+                  font-size: 12px;
+                  border: 1px solid #eaeaea;
+                  border-radius: 2px;
+                  display: inline-block;
+                  vertical-align: middle;
+                  white-space: nowrap;
+                  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+                  position: relative;
+                  a{
+                    padding: 4px 10px;
+                    background: #f5f5f5;
+                    color: #333;
+                    span{
+                      display: inline-block;
+                      width: 0;
+                      height: 0;
+                      vertical-align: middle;
+                      border-top: 4px solid #000000;
+                      border-right: 4px solid transparent;
+                      border-left: 4px solid transparent;
+                      content: "";
+                    }
+                  }
+                  ul{
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    z-index: 1000;
+                    min-width: 160px;
+                    padding: 5px 0;
+                    margin: 2px 0 0;
+                    background-color: #ffffff;
+                    border: 1px solid #ccc;
+                    border-radius: 6px;
+                    display: none;
+                    li{
+                      line-height: 20px;
+                      a{
+                        display: block;
+                        padding: 3px 20px;
+                        clear: both;
+                        font-weight: normal;
+                        line-height: 20px;
+                        color: #333333;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .widget_left{
+        float:left;
+        width: 65%;
+      }
+      // 右边板块
+      .widget_right{
+        float: left;
+        width: 32.6%;
+        margin-left: 2%;
+        td{
+          a{
+            display: inline-block;
+            font-size: 12px;
+            color: #fff;
+            padding: 0 6px;
+            border-radius: 2px;
+            text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          }
+          .accept{
+            background: #7BD77B;
+          }
+          .deny{
+            background: #da4f49;
+          }
+        }
+      }
+      .widget_bottom{
+        table{
+          border: 1px solid #ddd;
+          border-radius: 4px;
+          tbody{
+            tr:nth-child(odd){
+              background: #f9f9f9;
+            }
+          }
+        }
+        .Active{
+          background: #468847;
+        }
+        .inactive{
+          background:#999;
+        }
+        .Banned{
+          background:#b94a48;
+        }
+      }
+    }
+  }
+}
