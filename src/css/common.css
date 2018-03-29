@@ -1,0 +1,109 @@
+@charset "UTF-8";
+body, div, p, ul, ol, li, dl, dt, dd, table, tr, td, th, form, h1, h2, h3, h4, h5, h6, fieldset, figure, hr, img, input {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  height: 100%; }
+
+body {
+  font-family: "微软雅黑",Arial; }
+
+ol, ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  border: none; }
+
+.head {
+  width: 100%;
+  background: #292a2f;
+  border-bottom: 1px solid #46484b;
+  height: 47px;
+  position: fixed; }
+  .head div {
+    float: left; }
+  .head a {
+    line-height: 47px;
+    display: inline-block;
+    color: #fbfbfb; }
+  .head .logo {
+    width: 210px;
+    height: 47px;
+    background: url(../img/logo.png) no-repeat center; }
+  .head .header_content {
+    padding-left: 27px; }
+    .head .header_content a {
+      width: 143px;
+      position: relative; }
+      .head .header_content a span {
+        display: block;
+        position: absolute;
+        left: 103px;
+        top: 3px;
+        font-size: 9px;
+        width: 20px;
+        text-align: center;
+        line-height: 21px;
+        background: url(../img/icon_top.png) repeat-x center; }
+  .head .header_right {
+    float: right; }
+    .head .header_right a {
+      width: 135px; }
+
+.section {
+  padding-top: 48px;
+  height: 100%; }
+  .section .sidebar {
+    position: fixed;
+    width: 220px;
+    height: 100%;
+    background: #292a2f;
+    overflow: hidden; }
+    .section .sidebar div {
+      padding: 15px 15px;
+      background: #3d3e43; }
+      .section .sidebar div img {
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 150px;
+        margin-right: 15px; }
+      .section .sidebar div h4 {
+        font-size: 14px;
+        color: #da7e6f;
+        font-weight: 100;
+        line-height: 16px;
+        margin: 8px 0 0; }
+      .section .sidebar div a {
+        font-size: 12px;
+        color: #fff; }
+        .section .sidebar div a:hover {
+          text-decoration: underline; }
+    .section .sidebar ul {
+      width: 100%;
+      overflow: hidden; }
+      .section .sidebar ul li {
+        overflow: hidden; }
+        .section .sidebar ul li a {
+          display: block;
+          width: 100%;
+          padding-left: 18px;
+          box-sizing: border-box;
+          border-left: 1px solid #28292e;
+          border-bottom: 1px dashed #313131;
+          color: #fff;
+          line-height: 42px; }
+          .section .sidebar ul li a:hover {
+            border-left: 1px solid #f79999; }
+        .section .sidebar ul li .two {
+          background: url(../img/icon_1.png) no-repeat 194px 12px; }
+          .section .sidebar ul li .two:hover {
+            border-left: 1px solid #c3f7a7; }
+        .section .sidebar ul li .two_none {
+          display: none;
+          overflow: hidden;
+          background: #3d3e43; }
