@@ -27,6 +27,7 @@ img{
     border-bottom:1px solid #46484b;
     height:47px;
     position:fixed;
+    z-index:10000;
     div{
         float:left;
     }
@@ -66,12 +67,26 @@ img{
         a{
             width:135px;
         }
+        //控制侧边栏的出现
+        .cKsidebar{
+            display:none;
+            float:right;
+            margin-top:7px;
+            margin-right:5px;
+            width:40px;
+            height:29px;
+            background:url(../img/top_bg_1.png) no-repeat center;
+            &:hover{
+                cursor: pointer;
+            }
+        }
     }
 }
 //第二部分
 .section{
     padding-top:48px;
     height:100%;
+    z-index:10000;
     .sidebar{
         position:fixed;
         width:220px;
@@ -134,5 +149,18 @@ img{
                 }
             }
         }
+    }
+}
+
+//响应式部分（公共）
+@media screen and (max-width:960px){
+    .section .sidebar{
+        left:-220px;
+    }
+    .head .header_none{
+        display: none;
+    }
+    .head  .header_right .cKsidebar{
+        display:block;
     }
 }
