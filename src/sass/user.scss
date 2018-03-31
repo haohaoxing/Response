@@ -1,57 +1,40 @@
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 body{
-  font-size: 14px;
+    font-size: 14px;
+    background: #f8f8f8;
 }
 li{
-  list-style: none;
+    list-style: none;
 }
 a{
-  text-decoration: none;
+    text-decoration: none;
 }
 img{
-  vertical-align: bottom;
-  border: 0;
+    vertical-align: bottom;
+   border: 0;
 }
 .clear:after{
-  height: 0;
-  content: "";
-  display: block;
-  visibility: hidden;
-  overflow: hidden;
-  clear: both;
-}
-
-.head{
-  width: 100%;
-  height: 48px;
-  background: #000;
-  position: fixed;
-  top: 0;
-  left: 0;
+    height: 0;
+    content: "";
+    display: block;
+    visibility: hidden;
+    overflow: hidden;
+    clear: both;
 }
 
 //主体部分
 .section{
   width: 100%;
   height: 500px;
-  //侧边栏
-  .c{
-    width: 220px;
-    height: 100%;
-    background: #000;
-    position: fixed;
-    top: 48px;
-    left: 0;
-  }
 
   //主体内容
   .content{
+    margin-left: 220px;
     padding: 0 25px 25px;
-    margin: 48px 0 0 220px;
-    background: #f8f8f8;
+    box-sizing: border-box;
     // 位置导航
     .con_nav{
       margin-bottom: 25px;
@@ -70,6 +53,16 @@ img{
             padding: 0 5px;
             color: #ccc;
           }
+          &:hover{
+            a{
+              color: #005580;
+              text-decoration: underline;
+            }
+            .last{
+              color: #999;
+              text-decoration: none;
+            }
+          }
         }
       }
       .heading{
@@ -80,7 +73,7 @@ img{
           font-size: 31.5px;
           color: inherit;
         }
-        .btn-group{
+        .btn-grou{
           float: right;
           .btn{
             float: left;
@@ -91,7 +84,7 @@ img{
             vertical-align: middle;
             cursor: pointer;
             color: #333;
-            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+            text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); 
             background-color: #f5f5f5;
             border: 1px solid #bbbbbb;
             &:first-child{
@@ -104,6 +97,9 @@ img{
               border-bottom-right-radius: 4px;
               border-left: 0;
             }
+            &:hover{
+              background: #e6e6e6;
+            }
           }
         }
       }
@@ -112,9 +108,10 @@ img{
     .row-fluid{
       margin-bottom: 25px;
       .widget{
-        border: 1px solid #e0e0e0;
+        overflow: hidden;
         .widget_head{
           background: #efefef;
+          border: 1px solid #e0e0e0;
           border-radius: 3px 3px 0 0;
           height: 51px;
           border-bottom: 1px solid #DDDDDD;
@@ -147,6 +144,33 @@ img{
           padding: 15px;
           min-height: 290px;
           background: #fff;
+          border: 1px solid #e0e0e0;
+          border-top: 0;
+          transition: all .5s;
+          .dataTables{
+            margin-bottom: 8px;
+            div{
+              vertical-align: middle;
+              width: 50%;
+              lable{
+                vertical-align: middle;
+              }
+            }
+            .users_length{
+              float: left;
+              select{
+                width: 80%;
+                height: 26px;
+              }
+            }
+            .users_filter{
+              float: right;
+              input{
+                width: 80%;
+                height: 26px;
+              }
+            }
+          }
           table{
             width: 100%;
             background-color: transparent;
@@ -187,11 +211,11 @@ img{
                   display: inline-block;
                   vertical-align: middle;
                   white-space: nowrap;
-                  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
+                  box-shadow: 0 1px 2px rgba(255, 255, 255, 0.75);
                   position: relative;
+                  background: #f5f5f5;
                   a{
                     padding: 4px 10px;
-                    background: #f5f5f5;
                     color: #333;
                     span{
                       display: inline-block;
@@ -208,7 +232,6 @@ img{
                     position: absolute;
                     top: 100%;
                     left: 0;
-                    z-index: 1000;
                     min-width: 160px;
                     padding: 5px 0;
                     margin: 2px 0 0;
@@ -216,6 +239,7 @@ img{
                     border: 1px solid #ccc;
                     border-radius: 6px;
                     display: none;
+                    z-index: 999;
                     li{
                       line-height: 20px;
                       a{
@@ -227,6 +251,10 @@ img{
                         color: #333333;
                       }
                     }
+                  }
+                  &:hover{
+                    background: #e6e6e6;
+                    border: 1px solid #c3c3c3;
                   }
                 }
               }
@@ -241,7 +269,7 @@ img{
       // 右边板块
       .widget_right{
         float: left;
-        width: 32.6%;
+        width: 32%;
         margin-left: 2%;
         td{
           a{
@@ -254,9 +282,15 @@ img{
           }
           .accept{
             background: #7BD77B;
+            &:hover{
+              background: #71c371;
+            }
           }
           .deny{
             background: #da4f49;
+            &:hover{
+              background: #bd362f;
+            }
           }
         }
       }
@@ -279,6 +313,49 @@ img{
         .Banned{
           background:#b94a48;
         }
+      }
+    }
+  }
+}
+
+
+// 响应式
+@media screen and (max-width: 960px){
+	.sidebar{
+    transform: translateX(-220px);
+  }
+  .section .content{
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 770px){
+	.sidebar{
+    transform: translateX(-220px);
+  }
+  .section .content{
+    margin-left: 0;
+    .row-fluid{
+      .widget_left{
+        float: none;
+        width: 100%;
+        margin-bottom: 25px;
+      }
+      .widget_right{
+        width: 100%;
+        margin-left: 0;
+        float: none;
+      }
+    }
+  }
+  .dataTables{
+    div{
+      width: 100%;
+      margin-bottom: 5px;
+      .users_length{
+        float: none;
+      }
+      .users_filter{
+        float: none;
       }
     }
   }

@@ -3,17 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <title>user</title>
+    <link rel="stylesheet" href="../css/iconfont.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
     <link rel="stylesheet" href="../css/user.css"/>
 </head>
 <body>
-    <!--头部部分-->
-    <div class="head"></div>
+    <!-- 顶部部分 -->
+	<div class="head">
+		<!-- logo部分 -->
+		<div class="logo"></div>
+		<div class="header_content">
+			<i class="iconfont icon-email"></i><a class="header_none" href="javascript:;">Messages <span>2</span></a>
+			<i class="iconfont icon-globe"></i><a class="header_none" href="javascript:;">Notifications <span>3</span></a>
+		</div>
+		<div class="header_right">
+			<i class="iconfont icon-off"></i><a class="header_none" href="javascript:;">Logout</a>
+			<!-- 控制侧边栏的隐藏 -->
+			<div class="cKsidebar"></div>
+		</div>
+	</div>
     <!--主体部分-->
     <div class="section">
         <!--侧边栏-->
-        <div class="c"></div>
+        <div class="sidebar">
+			<!-- 侧边栏头部部分 -->
+			<div>
+				<img src="../img/admin.jpg"/>
+				<h4>Odinn</h4>
+				<a href="javascript:;"><i class="iconfont icon-shezhi"></i>Settings</a>
+			</div>
+			<!-- 侧边栏主体部分 -->
+			<ul>
+				<li><a href="javascript:;"><i class="iconfont icon-dashboard"></i>Dashboard</a></li>
+				<li>
+					<a class="two" href="javascript:;"><i class="iconfont icon-magic"></i>Features</a>
+					<!-- 隐藏部分 -->
+					<ul class="two_none">
+						<li><a href="javascipt:;"><i class="iconfont icon-star"></i>UI Features</a></li>
+						<li><a href="javascipt:;"><i class="iconfont icon-listalt"></i>Forms</a></li>
+						<li><a href="javascipt:;"><i class="iconfont icon-table"></i>Tables</a></li>
+						<li><a href="javascipt:;"><i class="iconfont icon-circle"></i>Buttons</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="two" href="javascript:;"><i class="iconfont icon-reorder"></i>Components</a>
+					<!-- 隐藏部分 -->
+					<ul class="two_none">
+							<li><a href="javascipt:;"><i class="iconfont icon-rss"></i>Notifications</a></li>
+							<li><a href="javascipt:;"><i class="iconfont icon-calendar"></i>Calendar</a></li>
+							<li><a href="javascipt:;"><i class="iconfont icon-picture"></i>Gallery</a></li>
+						</ul>
+				</li>
+				<li><a href="javascript:;"><i class="iconfont icon-tasks"></i>Tasks</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-tongjiliebiao"></i>Analytics</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-icon--"></i>Support Tickets</a></li>
+				<li><a href="javascript:;"><i class="iconfont icon-yonghu"></i>Users</a></li>
+			</ul>
+		</div>
         <!--主体内容-->
-        <div class="content">
+        <div class="content clear" id="content">
             <!--位置导航-->
             <div class="con_nav">
                 <ul class="clear">
@@ -23,10 +71,10 @@
                 </ul>
                 <div class="heading clear">
                     <h2>Users</h2>
-                    <div class="btn-group clear">
-                        <div class="btn"><i class="iconfont icon-xxx"></i>Export</div>
-                        <div class="btn"><i class="iconfont icon-xxx"></i>Email</div>
-                        <div class="btn"><i class="iconfont icon-xxx"></i>Settings</div>
+                    <div class="btn-grou clear">
+                        <div class="btn"><i class="iconfont icon-xiazai"></i>Export</div>
+                        <div class="btn"><i class="iconfont icon-email"></i>Email</div>
+                        <div class="btn"><i class="iconfont icon-shezhi"></i>Settings</div>
                     </div>
                 </div>
             </div>
@@ -36,14 +84,14 @@
                 <div class="widget widget_left">
                     <!-- 标题部分 -->
                     <div class="widget_head">
-                        <i class="iconfont icon-xxx"></i>
-                        <p>Employees</p>
+                         
+                        <p><i class="iconfont icon-yonghu"></i>Employees</p>
                         <div class="buttons">
-                            <a href="javascript:;"><i class="iconfont icon-xxx"></i>+</a>
-                            <a href="javascript:;"><i class="iconfont icon-xxx"></i>-</a>
+                            <a href="javascript:;"><i class="iconfont icon-plus-bold"></i></a>
+                            <a href="javascript:;" class="btnA"><i class="iconfont icon-jiantoushang"></i></a>
                         </div>
                     </div>
-                    <div class="widget_body">
+                    <div class="widget_body widget_dis">
                         <table>
                             <thead>
                                 <tr>
@@ -65,8 +113,8 @@
                                                 <span></span>
                                             </a>
                                             <ul>
-                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i>Email</a></li>
-                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-email"></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-plussign"></i>Edit</a></li>
                                                 <li><a href="javascript:;"><i class="iconfont icon-xxx"></i>Delete</a></li>
                                             </ul>
                                         </div>
@@ -157,7 +205,7 @@
                         <i class="iconfont icon-xxx"></i>
                         <p>Vacation management</p>
                         <div class="buttons">
-                            <a href="javascript:;"><i class="iconfont icon-xxx"></i>+</a>
+                            <a href="javascript:;" class="btnA"><i class="iconfont icon-jiantoushang"></i></a>
                         </div>
                     </div>
                     <div class="widget_body">
@@ -209,10 +257,26 @@
                         <p>Employees</p>
                         <div class="buttons">
                             <a href="javascript:;"><i class="iconfont icon-xxx"></i>+</a>
-                            <a href="javascript:;"><i class="iconfont icon-xxx"></i>-</a>
+                            <a href="javascript:;" class="btnA"><i class="iconfont icon-xxx"></i>-</a>
                         </div>
                     </div>
-                    <div class="widget_body">
+                    <div class="widget_body widget_ajax">
+                        <!-- 搜索框  -->
+                            <div class="dataTables clear">
+                                <div class="users_length">
+                                    <label for="">Entries: </label>
+                                    <select name="users_length">
+                                        <option value="10" selected>10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <div class="users_filter">
+                                    <label for="">Entries: </label>
+                                    <input type="text" name="users">
+                                </div>
+                            </div>
                         <table>
                             <thead>
                                 <tr>
@@ -228,7 +292,7 @@
                                     <td>Amie</td>
                                     <td>Admin</td>
                                     <td>20-05-2012</td>
-                                    <td><span class="Active">Active</span></td>
+                                    <td><span>Active</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -247,7 +311,7 @@
                                     <td>Christian</td>
                                     <td>User</td>
                                     <td>18-07-2011</td>
-                                    <td><span class="Banned">Banned</span></td>
+                                    <td><span>Banned</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -266,7 +330,7 @@
                                     <td>Katy</td>
                                     <td>User</td>
                                     <td>12-08-2012</td>
-                                    <td><span class="Active">Active</span></td>
+                                    <td><span>Active</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -285,7 +349,7 @@
                                     <td>Odessa</td>
                                     <td>User</td>
                                     <td>08-05-2012</td>
-                                    <td><span class="Active">Active</span></td>
+                                    <td><span>Active</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -304,7 +368,7 @@
                                     <td>Allan</td>
                                     <td>User</td>
                                     <td>06-04-2012</td>
-                                    <td><span class="inactive">Inactive</span></td>
+                                    <td><span>Inactive</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -323,7 +387,7 @@
                                     <td>Serena</td>
                                     <td>User</td>
                                     <td>05-01-2013</td>
-                                    <td><span class="Active">Active</span></td>
+                                    <td><span>Active</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -342,7 +406,7 @@
                                     <td>Hillary</td>
                                     <td>User</td>
                                     <td>03-08-2012</td>
-                                    <td><span class="Active">Active </span></td>
+                                    <td><span>Active</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -361,7 +425,7 @@
                                     <td>Nelson</td>
                                     <td>User</td>
                                     <td>03-06-2012</td>
-                                    <td><span class="Active">Active</span></td>
+                                    <td><span>Active</span></td>
                                     <td>
                                         <div class="btn-group">
                                             <a href="javascript:;">
@@ -384,4 +448,8 @@
         </div>
     </div>
 </body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/users_ajax.js"></script>
+<script src="../js/users.js"></script>
 </html>

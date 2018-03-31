@@ -1,0 +1,15 @@
+//侧边栏点击事件
+$('.two').click(function(){
+    $(this).next().slideToggle();
+    $(this).parent().siblings().find('.two_none').slideUp();
+});
+//控制侧边栏的出现
+$('.cKsidebar').click(function(){
+    if($('.sidebar').css('left')=="0px"){
+        $('.sidebar').stop(true).animate({left:"-250px"},500);
+            $('.content').css({'margin-left':'0'});
+    }else{
+        $('.sidebar').stop(true).animate({left:0},500);
+            $('.content').css({'margin-left':'220px'});
+    } 
+}); 
