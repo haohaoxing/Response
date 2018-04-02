@@ -64,6 +64,8 @@ img {
       background: url(../img/top_bg_1.png) no-repeat center; }
       .head .header_right .cKsidebar:hover {
         cursor: pointer; }
+  .head .iconfont {
+    color: #fff; }
 
 .section {
   padding-top: 48px;

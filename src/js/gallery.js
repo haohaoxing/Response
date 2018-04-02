@@ -1,14 +1,14 @@
 
-window.onload = function () {
+function initSize() {
 	let oBox   	   = document.getElementById('box');
 	let aPanel 	   = Array.from(oBox.children);
 	const iPanelW  = aPanel[0].offsetWidth; // 记录列的宽度
 
-
+	console.log(aPanel);
 	// 计算最多容纳列数
     let iWinW   = document.documentElement.clientWidth;
     console.log(iWinW);
-	let iMaxCol = Math.floor(iWinW / iPanelW);
+	let iMaxCol = Math.floor((iWinW-220 )/ iPanelW);
 
 	// 指定box的宽度
 	oBox.style.width = iMaxCol * iPanelW + 'px';
@@ -41,3 +41,11 @@ window.onload = function () {
 		}
 	});
 };
+$(function(){
+	　initSize();
+})
+$(window).resize(function () {
+	
+　　initSize();
+
+});

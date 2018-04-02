@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>user</title>
+    <link rel="stylesheet" href="../css/iconfont.css"/>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/user.css"/>
+</head>
+<body>
+    <!-- 顶部部分 -->
+	<div class="head">
+		<!-- logo部分 -->
+		<div class="logo"></div>
+		<div class="header_content">
+			<i class="iconfont icon-email"></i><a class="header_none" href="javascript:;">Messages <span>2</span></a>
+			<i class="iconfont icon-globe"></i><a class="header_none" href="javascript:;">Notifications <span>3</span></a>
+		</div>
+		<div class="header_right">
+			<i class="iconfont icon-off"></i><a class="header_none" href="javascript:;">Logout</a>
+			<!-- 控制侧边栏的隐藏 -->
+			<div class="cKsidebar"></div>
+		</div>
+	</div>
+    <!--主体部分-->
+    <div class="section">
+        <!--侧边栏-->
+        <div class="sidebar">
+			<!-- 侧边栏头部部分 -->
+			<div>
+				<img src="../img/admin.jpg"/>
+				<h4>Odinn</h4>
+				<a href="javascript:;"><i class="iconfont icon-shezhi"></i>Settings</a>
+			</div>
+			<!-- 侧边栏主体部分 -->
+			<ul>
+				<li><a href="dashboard.html" target="_blank"><i class="iconfont icon-dashboard"></i>Dashboard</a></li>
+				<li>
+					<a class="two" href="javascript:;"><i class="iconfont icon-magic"></i>Features</a>
+					<!-- 隐藏部分 -->
+					<ul class="two_none">
+						<li><a href="javascipt:;"><i class="iconfont icon-star"></i>UI Features</a></li>
+						<li><a href="javascipt:;"><i class="iconfont icon-listalt"></i>Forms</a></li>
+						<li><a href="javascipt:;"><i class="iconfont icon-table"></i>Tables</a></li>
+						<li><a href="javascipt:;"><i class="iconfont icon-circle"></i>Buttons</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="two" href="javascript:;"><i class="iconfont icon-reorder"></i>Components</a>
+					<!-- 隐藏部分 -->
+					<ul class="two_none">
+							<li><a href="javascipt:;"><i class="iconfont icon-rss"></i>Notifications</a></li>
+							<li><a href="javascipt:;"><i class="iconfont icon-calendar"></i>Calendar</a></li>
+							<li><a href="gallery.html" target="_blank"><i class="iconfont icon-picture"></i>Gallery1</a></li>
+						</ul>
+				</li>
+				<li><a href="javascript:;"><i class="iconfont icon-tasks"></i>Tasks</a></li>
+				<li><a href="Analytics.html" target="_blank"><i class="iconfont icon-tongjiliebiao"></i>Analytics1</a></li>
+				<li><a href="SupportTickets.html" target="_blank"><i class="iconfont icon-icon--"></i>Support Tickets</a></li>
+				<li><a href="users.html" target="_blank"><i class="iconfont icon-yonghu"></i>Users1</a></li>
+			</ul>
+		</div>
+        <!--主体内容-->
+        <div class="content clear" id="content">
+            <!--位置导航-->
+            <div class="con_nav">
+                <ul class="clear">
+                    <li><a href="javascript:;">Home</a><span>/</span></li>
+                    <li><a href="javascript:;">Pages</a><span>/</span></li>
+                    <li><a href="javascript:;" class="last">Users</a><span></span></li>
+                </ul>
+                <div class="heading clear">
+                    <h2>Users</h2>
+                    <div class="btn-grou clear">
+                        <div class="btn"><i class="iconfont icon-xxx"></i></i>Export</div>
+                        <div class="btn"><i class="iconfont icon-xxx"></i></i>Email</div>
+                        <div class="btn"><i class="iconfont icon-xxx"></i></i>Settings</div>
+                    </div>
+                </div>
+            </div>
+            <!-- row-fluid -->
+            <div class="row-fluid clear">
+                <!-- 左边板块 -->
+                <div class="widget widget_left">
+                    <!-- 标题部分 -->
+                    <div class="widget_head">
+                        <i class="iconfont icon-xxx"></i></i> 
+                        <p>Employees</p>
+                        <div class="buttons">
+                            <a href="javascript:;"><i class="iconfont icon-xxx"></i></i>+</a>
+                            <a href="javascript:;" class="btnA"><i class="iconfont icon-xxx"></i></i>-</a>
+                        </div>
+                    </div>
+                    <div class="widget_body widget_dis">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Username</th>
+                                    <th>Department</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lilia</td>
+                                    <td>Development</td>
+                                    <td><span class="working">Working</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fernando</td>
+                                    <td>Design</td>
+                                    <td><span class="onLeave">On Leave</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Cody</td>
+                                    <td>Finance</td>
+                                    <td><span class="working">Working</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Milagros</td>
+                                    <td>Support</td>
+                                    <td><span class="working">Working</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Allyson</td>
+                                    <td>Management</td>
+                                    <td><span class="working">Working</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <!-- 右边板块 -->
+                <div class="widget widget_right">
+                     <!-- 标题部分 -->
+                     <div class="widget_head">
+                        <i class="iconfont icon-xxx"></i></i>
+                        <p>Vacation management</p>
+                        <div class="buttons">
+                            <a href="javascript:;" class="btnA"><i class="iconfont icon-xxx"></i></i>+</a>
+                        </div>
+                    </div>
+                    <div class="widget_body">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Employee</th>
+                                    <th>Starts</th>
+                                    <th>Length</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Fernando Mcie</td>
+                                    <td>9.1.2013</td>
+                                    <td>7 days</td>
+                                    <td>Accepted</td>
+                                </tr>
+                                <tr>
+                                    <td>Cody Negley</td>
+                                    <td>1.2.2013</td>
+                                    <td>3 days</td>
+                                    <td>
+                                        <a href="javacript:;" class="accept">Accept</a>
+                                        <a href="javacript:;" class="deny">Deny</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>  Allyson Dress</td>
+                                    <td>17.2.2013</td>
+                                    <td>2 days</td>
+                                    <td>
+                                        <a href="javacript:;" class="accept">Accept</a>
+                                        <a href="javacript:;" class="deny">Deny</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div> 
+            <!-- row-fluid -->
+            <div class="row-fluid clear">
+                <div class="widget widget_bottom">
+                    <!-- 标题部分 -->
+                    <div class="widget_head">
+                        <i class="iconfont icon-xxx"></i></i>
+                        <p>Employees</p>
+                        <div class="buttons">
+                            <a href="javascript:;"><i class="iconfont icon-xxx"></i></i>+</a>
+                            <a href="javascript:;" class="btnA"><i class="iconfont icon-xxx"></i></i>-</a>
+                        </div>
+                    </div>
+                    <div class="widget_body widget_ajax">
+                        <!-- 搜索框  -->
+                            <div class="dataTables clear">
+                                <div class="users_length">
+                                    <label for="">Entries: </label>
+                                    <select name="users_length">
+                                        <option value="10" selected>10</option>
+                                        <option value="25">25</option>
+                                        <option value="50">50</option>
+                                        <option value="100">100</option>
+                                    </select>
+                                </div>
+                                <div class="users_filter">
+                                    <label for="">Entries: </label>
+                                    <input type="text" name="users">
+                                </div>
+                            </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>User</th>
+                                    <th>Group</th>
+                                    <th>Registered</th>
+                                    <th>Status</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Amie</td>
+                                    <td>Admin</td>
+                                    <td>20-05-2012</td>
+                                    <td><span>Active</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Christian</td>
+                                    <td>User</td>
+                                    <td>18-07-2011</td>
+                                    <td><span>Banned</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Katy</td>
+                                    <td>User</td>
+                                    <td>12-08-2012</td>
+                                    <td><span>Active</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Odessa</td>
+                                    <td>User</td>
+                                    <td>08-05-2012</td>
+                                    <td><span>Active</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Allan</td>
+                                    <td>User</td>
+                                    <td>06-04-2012</td>
+                                    <td><span>Inactive</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Serena</td>
+                                    <td>User</td>
+                                    <td>05-01-2013</td>
+                                    <td><span>Active</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hillary</td>
+                                    <td>User</td>
+                                    <td>03-08-2012</td>
+                                    <td><span>Active</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Nelson</td>
+                                    <td>User</td>
+                                    <td>03-06-2012</td>
+                                    <td><span>Active</span></td>
+                                    <td>
+                                        <div class="btn-group">
+                                            <a href="javascript:;">
+                                                Action
+                                                <span></span>
+                                            </a>
+                                            <ul>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Email</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Edit</a></li>
+                                                <li><a href="javascript:;"><i class="iconfont icon-xxx"></i></i>Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+</body>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/common.js"></script>
+<script src="../js/users_ajax.js"></script>
+<script src="../js/users.js"></script>
+</html>

@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="../css/common.css"/>
+    <link rel="stylesheet" href="../css/iconfont.css">
+    <link rel="stylesheet" href="../css/Analytics.css">
+</head>
+<body>
+    <!-- 顶部部分 -->
+	<div class="head">
+		<!-- logo部分 -->
+		<div class="logo"></div>
+		<div class="header_content">
+			<i class="iconfont icon-email"></i><a class="header_none" href="javascript:;">Messages <span>2</span></a>
+			<i class="iconfont icon-globe"></i><a class="header_none" href="javascript:;">Notifications <span>3</span></a>
+		</div>
+		<div class="header_right">
+            <i class="iconfont icon-off"></i><a class="header_none" href="javascript:;">Logout</a>
+            <!-- 控制侧边栏的隐藏 -->
+			<div class="cKsidebar"></div>
+        </div>
+	</div>
+
+    </div>
+    <!-- 主体部分 -->
+    <div class="section">
+        <!-- 侧边栏 -->
+        <!-- <div class="sidebar"></div> -->
+        <div class="sidebar">
+			<!-- 侧边栏头部部分 -->
+			<div>
+				<img src="../img/admin.jpg"/>
+				<h4>Odinn</h4>
+				<a href="javascript:;"><i class="iconfont icon-shezhi"></i>Settings</a>
+			</div>
+			<!-- 侧边栏主体部分 -->
+			<ul>
+                <li><a href="dashboard.html" target="_blank"><i class="iconfont icon-dashboard"></i>Dashboard</a></li>
+                <li>
+                    <a class="two" href="javascript:;"><i class="iconfont icon-magic"></i>Features</a>
+                    <!-- 隐藏部分 -->
+                    <ul class="two_none">
+                        <li><a href="javascipt:;"><i class="iconfont icon-star"></i>UI Features</a></li>
+                        <li><a href="javascipt:;"><i class="iconfont icon-listalt"></i>Forms</a></li>
+                        <li><a href="javascipt:;"><i class="iconfont icon-table"></i>Tables</a></li>
+                        <li><a href="javascipt:;"><i class="iconfont icon-circle"></i>Buttons</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="two" href="javascript:;"><i class="iconfont icon-reorder"></i>Components</a>
+                    <!-- 隐藏部分 -->
+                    <ul class="two_none">
+                            <li><a href="javascipt:;"><i class="iconfont icon-rss"></i>Notifications</a></li>
+                            <li><a href="javascipt:;"><i class="iconfont icon-calendar"></i>Calendar</a></li>
+                            <li><a href="gallery.html" target="_blank"><i class="iconfont icon-picture"></i>Gallery1</a></li>
+                        </ul>
+                </li>
+                <li><a href="javascript:;"><i class="iconfont icon-tasks"></i>Tasks</a></li>
+                <li><a href="Analytics.html" target="_blank"><i class="iconfont icon-tongjiliebiao"></i>Analytics1</a></li>
+                <li><a href="SupportTickets.html" target="_blank"><i class="iconfont icon-icon--"></i>Support Tickets</a></li>
+                <li><a href="users.html" target="_blank"><i class="iconfont icon-yonghu"></i>Users1</a></li>
+            </ul>
+        </div>
+        			
+        <!-- 内容 -->
+        <div class="content-center">
+                <div class="content-top">
+                     <a href="javascript:;" class="home">Home</a>
+                     <a href="javascript:;" class="pg">Pages</a>
+                     <a href="javascript:;" class="an">Analytics</a>
+                    <h2>
+                       <span>Analytics</span> 
+                        <div class="top-left">
+                            <a href="javascript:;" class="btn"><i class="iconfont icon-xiazai"></i>Export</a>
+                            <a href="javascript:;" class="btn"><i class="iconfont icon-youjian"></i>Emaile</a>
+                            <a href="javascript:;" class="btn do"><i class="iconfont icon-fenxiang"></i>Documentation</a>
+                        </div>
+                    </h2>
+                </div>
+                <!-- 主体内容部分 -->
+                    <!-- Donut Char部分 -->
+                    <div class="char">
+                        <!-- 标题部分1 -->
+                        <div class="char-title">
+                            <i></i>
+                            <h5>Donut Chart
+                                <a href="javascript:;" class="add">＋</a>
+                            </h5>
+                        </div>
+                        <!-- 要添加内容部分 -->
+                        <div id="char-content" class="hide">
+                            <div id="dount-one" class="part"></div>
+                            <div id="New-second" class="part"></div>
+                            <div id="Firefox" class="part"></div>
+                            <div id="About" class="part"></div>
+                        </div>
+                    </div>
+                    <!-- area标题第二部分 -->
+                    <div class="Area">
+                        <div class="area-title">
+                            <i></i>
+                            <h5>Area Chart
+                            <a href="javascript:;" class="add">＋</a>
+                            </h5>
+                        </div>
+                        <!-- 要添加内容部分 -->
+                        <div id="area-content"> </div>
+                    </div>
+                     <!-- area标题第三部分 -->
+                    <div class="Area">
+                        <div class="area-title">
+                            <i></i>
+                            <h5>Double Area chart
+                                <a href="javascript:;" class="add">＋</a>
+                            </h5>
+                        </div>
+                        <!-- 要添加内容部分 -->
+                        <div id="three-content">
+                                
+                        </div>
+                    </div>
+                    <!-- area标题第四部分 -->
+                    <div class="Area">
+                            <div class="area-title">
+                                <i></i>
+                                <h5>Line chart
+                                    <a href="javascript:;" class="add">＋</a>
+                                </h5>
+                            </div>
+                            <!-- 要添加内容部分 -->
+                            <div id="line-content">
+                                    
+                            </div>
+                    </div>
+                     <!-- area标题第五部分 -->
+                    <div class="Area">
+                        <div class="area-title">
+                            <i></i>
+                            <h5>Double Line chart
+                            <a href="javascript:;" class="add">＋</a>
+                            </h5>
+                        </div>
+                        <!-- 要添加内容部分 -->
+                        <div id="d-line"></div>    
+                    </div>
+                      <!-- area标题第六部分 -->
+                    <div class="Area">
+                        <div class="area-title">
+                            <i></i>
+                            <h5>bar chart
+                                <a href="javascript:;" class="add">＋</a>
+                            </h5>
+                        </div>
+                        <!-- 要添加内容部分 -->
+                        
+                        <div id="last-content">
+                                
+                        </div>
+                    </div>
+                    <!-- 底部部分 -->
+                    <div class="footer">
+                        <!-- 第一个板块 -->
+                        <div class="foot-one st active">
+                            <div class="foot-title">
+                                <i></i>
+                                <h5>Statistics
+                                    <a href="javascript:;" class="add">＋</a>
+                                </h5>
+                                <div class="f-left">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="foot-main">
+                               <ul class="foot-list">
+                                   <li class="vs"><h5>visits</h5><h4>550</h4></li>
+                                   <li><h5>visits</h5><h4>550</h4></li>
+                                   <li><h5>visits</h5><h4>550</h4></li>
+                                   <li><h5>visits</h5><h4>550</h4></li>
+                                   <li><h5>visits</h5><h4>550</h4></li>
+                                   <li><h5>visits</h5><h4>550</h4></li>
+                                   <li><h5>visits</h5><h4>550</h4></li>
+                               </ul>
+                            </div>
+                        </div>
+                        <!-- 第二个板块 -->
+                        <div class="foot-most active">
+                            <div class="most-title">
+                                <i></i>
+                                <h5>Most active pages
+                                    <a href="javascript:;" class="add">＋</a>
+                                </h5>
+                                <div class="m-left">
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                            </div>
+                            <div class="most-main">
+                                <ul class="foot-list">
+                                        <li ><h5 class="bw-one">Browser</h5><h4 class="vs-one">Visits</h4></li>
+                                        <li><h5>Firefox</h5><h4>57667</h4></li>
+                                        <li><h5>Chrome</h5><h4>550</h4></li>
+                                        <li><h5>Chrome</h5><h4>550</h4></li>
+                                        <li><h5>Chrome</h5><h4>550</h4></li>
+                                        <li><h5>Chrome</h5><h4>550</h4></li>
+                                        <li class="last"><h5>Chrome</h5><h4>550</h4></li>
+                                        
+                                    </ul>   
+                            </div>
+                        </div>
+                        <!-- 第三个部分 -->
+                        <div class="foot-most active">
+                                <div class="most-title">
+                                    <i></i>
+                                    <h5>Browsers
+                                        <a href="javascript:;" class="add">＋</a>
+                                    </h5>
+                                    <div class="m-left">
+                                        <i></i>
+                                        <i></i>
+                                    </div>
+                                </div>
+                                <div class="most-main">
+                                    <ul class="foot-list">
+                                            <li ><h5 class="bw-one">Browser</h5><h4 class="vs-one">Visits</h4></li>
+                                            <li><h5>Firefox</h5><h4>57667</h4></li>
+                                            <li><h5>Chrome</h5><h4>550</h4></li>
+                                            <li><h5>Chrome</h5><h4>550</h4></li>
+                                            <li><h5>Chrome</h5><h4>550</h4></li>
+                                            <li><h5>Chrome</h5><h4>550</h4></li>
+                                            <li class="last"><h5>Chrome</h5><h4>550</h4></li>
+                                           
+                                        </ul>   
+                                </div>
+                        </div>
+                        
+                    </div>
+                    <!-- <div class="ll">
+                            
+                  </div> -->
+        </div>
+    </div>
+    
+    
+</body>
+</html>
+<script src="../js/jquery-1.8.3.min.js"></script>
+<script src="../js/click.js"></script>
+<script src="../js/echarts.js"></script>
+<script src="../js/common.js"></script>
+<script src="https://cdn.hcharts.cn/jquery/jquery-1.8.3.min.js"></script>
+
+<!-- // Highcharts -->
+<script src="https://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+
+<script>
+    // / 基于准备好的dom，初始化echarts实例
+        var myChart = echarts.init(document.getElementById('dount-one'));
+
+            // app.title = '环形图';
+
+        var option = {
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b}: {c} ({d}%)"
+            },
+        //     title: {
+        //     floating:true,
+        //     text: '圆心显示的标题'
+        // //    left:'center'
+        // },
+            
+            series: [
+                {
+                    name:'visit today',
+                    type:'pie',
+                    radius: ['50%', '70%'],
+                    avoidLabelOverlap: false,
+                    label: {
+                        normal: {
+                            show: false,
+                            position: 'center'
+                        },
+                        emphasis: {
+                            show: true,
+                            textStyle: {
+                                fontSize: '14',
+                                fontWeight: 'bold'
+                            }
+                        }
+                    },
+                    labelLine: {
+                        normal: {
+                            show: false
+                        }
+                    },
+                    data:[
+                    {value:335, name:'visity today'},
+                    {value:310, name:'% New visitors'},
+                    {value:234, name:'Firefox'},
+                    {value:135, name:'Chrome'},
+                    {value:1548, name:'About'}
+                    ]
+                }
+            ]
+        };
+        myChart.setOption(option);
+</script>
+<!-- 第二个部分 -->
+<script>
+        // / 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('New-second'));
+    
+                // app.title = '环形图';
+    
+            var option = {
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{a} <br/>{b}: {c} ({d}%)"
+                },
+                series: [
+                    {
+                        name:'% New visitors',
+                        type:'pie',
+                        radius: ['50%', '70%'],
+                        avoidLabelOverlap: false,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                show: true,
+                                textStyle: {
+                                    fontSize: '14',
+                                    fontWeight: 'bold'
+                                }
+                            }
+                        },
+                        labelLine: {
+                            normal: {
+                                show: false
+                            }
+                        },
+                        data:[
+                        {value:335, name:'visity today'},
+                        {value:310, name:'% New visitors'},
+                        {value:234, name:'Firefox'},
+                        {value:135, name:'Chrome'},
+                        {value:1548, name:'About'}
+                        ]
+                    }
+                ]
+            };
+            myChart.setOption(option);
+    </script>
+    <!-- 第三部分 -->
+    <script>
+            // / 基于准备好的dom，初始化echarts实例
+                var myChart = echarts.init(document.getElementById('Firefox'));
+        
+                    // app.title = '环形图';
+        
+                var option = {
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b}: {c} ({d}%)"
+                    },
+                    series: [
+                        {
+                            name:'% New visitors',
+                            type:'pie',
+                            radius: ['50%', '70%'],
+                            avoidLabelOverlap: false,
+                            label: {
+                                normal: {
+                                    show: false,
+                                    position: 'center'
+                                },
+                                emphasis: {
+                                    show: true,
+                                    textStyle: {
+                                        fontSize: '14',
+                                        fontWeight: 'bold'
+                                    }
+                                }
+                            },
+                            labelLine: {
+                                normal: {
+                                    show: false
+                                }
+                            },
+                            data:[
+                                {value:335, name:'visity today'},
+                                {value:310, name:'% New visitors'},
+                                {value:234, name:'Firefox'},
+                                {value:135, name:'Chrome'},
+                                {value:1548, name:'About'}
+                            ]
+                        }
+                    ]
+                };
+                myChart.setOption(option);
+        </script>
+        <!-- 第四部分 -->
+        <script>
+                // / 基于准备好的dom，初始化echarts实例
+                    var myChart = echarts.init(document.getElementById('About'));
+            
+                        // app.title = '环形图';
+            
+                    var option = {
+                        tooltip: {
+                            trigger: 'item',
+                            formatter: "{a} <br/>{b}: {c} ({d}%)"
+                        },
+                        series: [
+                            {
+                                name:'% New visitors',
+                                type:'pie',
+                                radius: ['50%', '70%'],
+                                avoidLabelOverlap: false,
+                                label: {
+                                    normal: {
+                                        show: false,
+                                        position: 'center'
+                                    },
+                                    emphasis: {
+                                        show: true,
+                                        textStyle: {
+                                            fontSize: '14',
+                                            fontWeight: 'bold'
+                                        }
+                                    }
+                                },
+                                labelLine: {
+                                    normal: {
+                                        show: false
+                                    }
+                                },
+                                data:[
+                                {value:335, name:'visity today'},
+                                {value:310, name:'% New visitors'},
+                                {value:234, name:'Firefox'},
+                                {value:135, name:'Chrome'},
+                                {value:1548, name:'About'}
+                                ]
+                            }
+                        ]
+                    };
+                    myChart.setOption(option);
+            </script>
+
+            <!-- 第二个板块部分 -->
+            <script>
+            var myChart = echarts.init(document.getElementById('area-content'));
+            var option = {
+                xAxis: {
+                    type: 'category',
+                    boundaryGap: false,
+                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                },
+                yAxis: {
+                    type: 'value'
+                },
+                series: [{
+                    data: [820, 932, 901, 934, 1290, 1330, 1320],
+                    type: 'line',
+                    areaStyle: {}
+                }]
+            };
+            myChart.setOption(option);
+           </script>
+
+           <!-- 第二部分 -->
+           <script>
+               $(function () {
+                $('#three-content').highcharts({
+                    chart: {
+                        type: 'area'
+                    },
+                    title: {
+                        text: null
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    xAxis: {
+                        categories: ['1750', '1800', '1850', '1900', '1950', '1999', '2050'],
+                        tickmarkPlacement: 'on',
+                        title: {
+                            enabled: false
+                        }
+                    },
+                    yAxis: {
+                        title: {
+                            text:null
+                        },
+                        labels: {
+                            formatter: function () {
+                                return this.value / 1000;
+                            }
+                        }
+                    },
+                    tooltip: {
+                        split: true,
+                        // valueSuffix: ' 百万'
+                    },
+                    plotOptions: {
+                        area: {
+                            stacking: 'normal',
+                            lineColor: '#666666',
+                            lineWidth: 1,
+                            marker: {
+                                lineWidth: 1,
+                                lineColor: '#666666'
+                            }
+                        }
+                    },
+                    series: [{
+                        name: '2012-01-20',
+                        data: [502, 635, 809, 947, 1402, 3634, 5268]
+                    }, {
+                        name: '2012-01-22',
+                        data: [106, 107, 111, 133, 221, 767, 1766]
+                    },
+                ]
+                });
+            });
+
+        </script>
+
+        <!-- 第三部分 -->
+        <script>
+                  var chart = Highcharts.chart('line-content', {
+                    title: {
+                        text: null
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    yAxis: {
+                        title: {
+                            text: null
+                        }
+                    },
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle'
+                    },
+                    plotOptions: {
+                        series: {
+                            label: {
+                                connectorAllowed: false
+                            },
+                            pointStart: 2010
+                        }
+                    },
+                    series: [{
+                        name: '2012-01-20',
+                        data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+                    }],
+                
+                    responsive: {
+                        rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                    }
+                });
+        </script>
+
+        <!-- area第四部分 -->
+        <script>
+                    var chart = Highcharts.chart('d-line', {
+                    title: {
+                        text:null
+                    },
+                    subtitle: {
+                        text: null
+                    },
+                    yAxis: {
+                        title: {
+                            text:null
+                        }
+                    },
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'middle'
+                    },
+                    plotOptions: {
+                        series: {
+                            label: {
+                                connectorAllowed: false
+                            },
+                            pointStart: 2010
+                        }
+                    },
+                    series: [{
+                        name: '2012--1-20',
+                        data: [43934, 52503, 57177, 69658, 97031, 89931, 137133, 154175]
+                    }, {
+                        name: '2012--1-22',
+                        data: [34894, 45503, 47167, 60640, 89041, 78090, 128121, 145451]
+                    } 
+                ],
+                    responsive: {
+                        rules: [{
+                            condition: {
+                                maxWidth: 500
+                            },
+                            chartOptions: {
+                                legend: {
+                                    layout: 'horizontal',
+                                    align: 'center',
+                                    verticalAlign: 'bottom'
+                                }
+                            }
+                        }]
+                    }
+                });
+
+        </script>
+
+        <!-- area最后部分 -->
+        <script>
+                    $(function () {
+                    var chart = Highcharts.chart('last-content', {
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: null
+                        },
+                        subtitle: {
+                            text: null
+                        },
+                        xAxis: {
+                            categories: ['2012-01-10', '2012-02-10', '2012-02-20', '2012-03-01', '2012-03-02', '2012-03-04',
+                                        '2012-03-05', '2012-03-06', '2012-03-07', '2012-03-10', '2012-03-21', '2012-03-22']
+                        },
+                        yAxis: {
+                            labels: {
+                                x: -15
+                            },
+                            title: {
+                                text: null
+                            }
+                        },
+                        series: [{
+                            name: '2012-01-02',
+                            data: [434, 523, 345, 785, 565, 843, 726, 590, 665, 434, 312, 432]
+                        }],
+                        responsive: {
+                            rules: [{
+                                condition: {
+                                    maxWidth: 500
+                                },
+                                // Make the labels less space demanding on mobile
+                                chartOptions: {
+                                    xAxis: {
+                                        labels: {
+                                            formatter: function () {
+                                                return this.value.replace('月', '')
+                                            }
+                                        }
+                                    },
+                                    yAxis: {
+                                        labels: {
+                                            align: 'left',
+                                            x: 0,
+                                            y: -2
+                                        },
+                                        title: {
+                                            text: ''
+                                        }
+                                    }
+                                }
+                            }]
+                        }
+                    });
+                    $('#small').click(function () {
+                        chart.setSize(400, 300);
+                    });
+                    $('#large').click(function () {
+                        chart.setSize(800, 300);
+                    });
+                });
+        </script>
+
